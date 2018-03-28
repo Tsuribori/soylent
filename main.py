@@ -124,6 +124,8 @@ def parse_arguments():
         freeze(args.freeze)
     elif args.unfreeze:
         unfreeze(args.unfreeze)
+    elif len(sys.argv) == 1:
+        parser.print_help()
 parse_arguments()
 
 
